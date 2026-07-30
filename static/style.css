@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f0fdf4;
+    color: #1a2e1a;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 60px;
+    background: rgba(6, 78, 6, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d4edda;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a3e635;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0b3d0b, #1b5e1b, #2e7d32);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(76, 175, 80, 0.3), transparent 60%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #c8e6c9;
+    margin: 20px 0 30px;
+    font-weight: 300;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 14px 40px;
+    background: #a3e635;
+    color: #0b3d0b;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(163, 230, 53, 0.5);
+    background: #bef264;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: 100px 20px;
+}
+
+.section-alt {
+    background: #e8f5e9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1b5e1b;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #4caf50;
+    border-radius: 2px;
+    margin: 10px auto 0;
+}
+
+.section-desc {
+    font-size: 1.1rem;
+    color: #4a5d4a;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== MISIÓN ===== */
+.mision-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.mision-card {
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    border: 1px solid rgba(76, 175, 80, 0.1);
+}
+
+.mision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(76, 175, 80, 0.15);
+}
+
+.mision-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.mision-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1b5e1b;
+    margin-bottom: 12px;
+}
+
+.mision-card p {
+    font-size: 0.95rem;
+    color: #4a5d4a;
+    line-height: 1.6;
+}
+
+/* ===== BENEFICIOS ===== */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.beneficio-item {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    border-left: 5px solid #4caf50;
+    transition: 0.3s;
+}
+
+.beneficio-item:hover {
+    transform: translateX(6px);
+    box-shadow: 0 8px 30px rgba(76, 175, 80, 0.12);
+}
+
+.beneficio-num {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #4caf50;
+    background: #e8f5e9;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.beneficio-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1b5e1b;
+    margin-bottom: 8px;
+}
+
+.beneficio-item p {
+    font-size: 0.9rem;
+    color: #4a5d4a;
+    line-height: 1.5;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    display: inline-block;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, #2e7d32, #4caf50);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.35);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.45);
+    background: linear-gradient(135deg, #388e3c, #66bb6a);
+}
+
+/* ===== CONTACTO ===== */
+.contacto-info p {
+    font-size: 1.1rem;
+    color: #2e7d32;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #0b3d0b;
+    color: #a5d6a7;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-content p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    nav {
+        padding: 14px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .mision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-hero {
+        padding: 12px 28px;
+        font-size: 0.9rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+}

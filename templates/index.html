@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Cartón Eco</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">♻️ Cartón Eco</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#mision">Misión</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#encuesta">Encuesta</a></li>
+            <li><a href="#presentacion">Presentación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Proyecto Cartón Eco</h1>
+            <p>Transformando el reciclaje en un futuro sostenible</p>
+            <a href="#mision" class="btn-hero">Conoce más</a>
+        </div>
+    </section>
+
+    <section id="mision" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <div class="mision-grid">
+                <div class="mision-card">
+                    <div class="mision-icon">🌱</div>
+                    <h3>Innovación Sostenible</h3>
+                    <p>Desarrollar envases biodegradables a partir del reciclaje de papel y cartón, promoviendo la sostenibilidad y la economía circular.</p>
+                </div>
+                <div class="mision-card">
+                    <div class="mision-icon">♻️</div>
+                    <h3>Economía Circular</h3>
+                    <p>Crear un sistema donde los residuos se convierten en recursos, reduciendo el impacto ambiental y generando conciencia ecológica.</p>
+                </div>
+                <div class="mision-card">
+                    <div class="mision-icon">🌍</div>
+                    <h3>Impacto Global</h3>
+                    <p>Contribuir a la reducción de plásticos de un solo uso, ofreciendo alternativas ecológicas accesibles para todos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Beneficios</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <span class="beneficio-num">01</span>
+                    <h3>100% Biodegradable</h3>
+                    <p>Nuestros envases se descomponen naturalmente sin dañar el medio ambiente.</p>
+                </div>
+                <div class="beneficio-item">
+                    <span class="beneficio-num">02</span>
+                    <h3>Hecho de Cartón Reciclado</h3>
+                    <p>Damos una segunda vida al papel y cartón que la gente desecha.</p>
+                </div>
+                <div class="beneficio-item">
+                    <span class="beneficio-num">03</span>
+                    <h3>Libre de Plástico</h3>
+                    <p>Alternativa ecológica a los envases plásticos tradicionales.</p>
+                </div>
+                <div class="beneficio-item">
+                    <span class="beneficio-num">04</span>
+                    <h3>Económico</h3>
+                    <p>Producido con materiales de bajo costo, accesible para todos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="encuesta" class="section">
+        <div class="container center">
+            <h2 class="section-title">Encuesta</h2>
+            <p class="section-desc">Queremos conocer tu opinión sobre nuestro producto. ¡Tu voz es importante!</p>
+            <button class="btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfZQYISApXiOVRlwpHlv_xBrzprV4QS7W6nZbosH8W38arQmQ/viewform?usp=header', '_blank')">
+                📝 Ir a la encuesta
+            </button>
+        </div>
+    </section>
+
+    <section id="presentacion" class="section section-alt">
+        <div class="container center">
+            <h2 class="section-title">Presentación</h2>
+            <p class="section-desc">Mira nuestra presentación del proyecto Cartón Eco</p>
+            <button class="btn" onclick="window.open('https://canva.link/fianacieraaldrin', '_blank')">
+                📊 Ver presentación
+            </button>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container center">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-desc">¿Tienes dudas o quieres colaborar con nosotros? ¡Escríbenos!</p>
+            <div class="contacto-info">
+                <p>📧 proyecto.cartoneco@escolar.edu</p>
+                <p>📱 987 654 321</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>♻️ Proyecto Cartón Eco — Feria de Ciencias</p>
+            <p>&copy; 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
